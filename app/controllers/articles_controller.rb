@@ -29,11 +29,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    p Rails.application.credentials.secret_key_base
     article = Article.new(article_params)
     article.user_id = @user.id
     if article.save
-      puts article
       render json: article, status: :ok
     else
       error_render(article)
