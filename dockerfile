@@ -1,5 +1,5 @@
 # ベースイメージとして Ruby のオフィシャルイメージを使用
-FROM ruby:3.1
+FROM ruby:3.2.2
 
 # 必要なパッケージのインストール
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
