@@ -8,7 +8,11 @@ gem "rails", "~> 7.0.8"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
+# Use mysql2 as the database for Active Record
+gem 'mysql2', group: [:production]
+
+# dotenv
+gem "dotenv-rails"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"

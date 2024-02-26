@@ -1,9 +1,20 @@
 # Real World API Documents
-## ベースURL
-Real World APIのベースURLは下記になります。
-```
-http://127.0.0.1:3000
-```
+
+## realworld-infrastructur
+
+## URL
+
+### [realworld](https://safetykayak.com)  
+※ ドメインがsaftykayak.comとなっていますがオリプロ用に取得したものになります。
+
+## インフラ図
+[インフラ構成図](./documents/infrastructure.drawio)
+![alt text](documents/infrastructure.png)
+
+
+---
+
+## API
 ## Articles
 ### GET /api/articles
 - 説明: すべての記事を取得します。
@@ -30,6 +41,7 @@ http://127.0.0.1:3000
 - パラメータ: なし
 - レスポンス: 削除の確認
 
+
 ## Users
 ### POST /api/users
 - 説明: 新しいユーザーを登録します。
@@ -40,3 +52,4 @@ http://127.0.0.1:3000
 - 説明: ユーザーがログインします。
 - パラメータ: ユーザーの認証情報（メールアドレス、パスワード）
 - レスポンス: 認証成功の確認とユーザー情報
+
