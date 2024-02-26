@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web:
+    image: 680950831771.dkr.ecr.ap-northeast-1.amazonaws.com/realworld:v2
+    environment:
+      RAILS_MAX_THREADS: 5
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 1123ragna
+      MYSQL_DATABASE: myapp_development
+      DB_HOST: realworld-db.c8b65xuuo3fw.ap-northeast-1.rds.amazonaws.com
+      MYAPP_DATABASE_PASSWORD: 1123ragna
+    ports:
+      - "80:3000"
+    command: bash -c "rails db:create && rails db:migrate && bundle exec rails s -p 3000 -b '0.0.0.0'"
